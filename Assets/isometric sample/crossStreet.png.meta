@@ -108,7 +108,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Collision_Tilemap
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 974
+        height: 595
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c443c3bfb360f48a0d4a473b46a614
+      internalID: 2097146641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +140,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Collision_Tilemap: 2097146641
+      crossStreet_0: -1767185717
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
