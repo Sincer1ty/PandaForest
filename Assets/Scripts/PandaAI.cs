@@ -7,8 +7,10 @@ public class PandaAI : MonoBehaviour
     public int move_delay;	// 다음 이동까지의 딜레이 시간
     public int move_time;	// 이동 시간
 
-    float speed_x;	// x축 방향 이동 속도
-    float speed_y;	// y축 방향 이동 속도
+    float speed = 0.15f;
+
+    private Vector2 direction;
+
     bool isWandering;
     bool isWalking;
 
@@ -31,30 +33,48 @@ public class PandaAI : MonoBehaviour
         if (!isWandering)
             StartCoroutine(Wander());	// 코루틴 실행
 
+        
         if (isWalking)
-            Move();
+        {
+            transform.position += (Vector3)direction * speed * Time.deltaTime;
+        }
+        
+    }
+  
+    void MoveDirection()
+    {
+        float rand_x, rand_y;
+        rand_x = Random.Range(-1.0f, 1.0f);
+        rand_y = Random.Range(-1.0f, 1.0f);
+        Debug.Log(rand_x);
+        Debug.Log(rand_y);
+
+        while (rand_x == 0 && rand_y == 0)
+        {
+            rand_x = Random.Range(-1.0f, 1.0f);
+            rand_y = Random.Range(-1.0f, 1.0f);
+        }
+
+        direction = new Vector2(rand_x, rand_y).normalized;
+        Debug.Log(direction);
     }
 
-    void Move()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (speed_x != 0)
-        {
-            sprite.flipX = speed_x < 0; // x축 속도에 따라 Spite 이미지를 뒤집음
-        }
-            
+        // Get the normal vector of the surface the object collided with
+        Vector2 surfaceNormal = collision.contacts[0].normal;
 
-        transform.Translate(speed_x, speed_y, speed_y);	// 젤리 이동
+        // Calculate the reflected direction vector
+        direction = Vector2.Reflect(direction, surfaceNormal);
+
     }
 
     IEnumerator Wander()
     {
-        // 추후 변경 : 현재는 변화를 빠르게 감지하기 위해 딜레이는 짧게 무빙은 길게
-        move_delay = 1;
-        move_time = 6;
+        move_delay = 4;
+        move_time = 10;
 
-        // Translate로 이동할 시 Object가 텔레포트 하는 것을 방지하기 위해 Time.deltaTime을 곱해줌
-        speed_x = Random.Range(-0.8f, 0.8f) * Time.deltaTime;
-        speed_y = Random.Range(-0.8f, 0.8f) * Time.deltaTime;
+        MoveDirection(); // 움직이는 랜덤 방향 설정
 
         isWandering = true;
 
@@ -71,11 +91,4 @@ public class PandaAI : MonoBehaviour
         isWandering = false;
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.name.Contains("Bottom_CollisionTiles") || collision.gameObject.name.Contains("Top_CollisionTiles"))
-            speed_y = -speed_y;
-        else if (collision.gameObject.name.Contains("Left_CollisionTiles") || collision.gameObject.name.Contains("Right_CollisionTiles"))
-            speed_x = -speed_x;
-    }
 }
