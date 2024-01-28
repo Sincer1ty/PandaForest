@@ -23,7 +23,6 @@ public class ObjectDetector : MonoBehaviour
         {
             ray = mainCamera.ScreenPointToRay(Input.mousePosition);
 
-            
             if (Physics.Raycast(ray, out hit, Mathf.Infinity))
             {
                 if (hit.transform.CompareTag("Tile"))
