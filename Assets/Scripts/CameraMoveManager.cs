@@ -8,7 +8,13 @@ public class CameraMoveManager : MonoBehaviour
     private Vector2 nowPos, prePos;
     private Vector3 movePos;
 
+    private Camera mainCamera;
     public float zoomSpeed = 0.5f;
+
+    private void Awake()
+    {
+        mainCamera = Camera.main;
+    }
 
     // Update is called once per frame
     void Update()
@@ -32,8 +38,8 @@ public class CameraMoveManager : MonoBehaviour
 
         float deltaMagDiff = prevTouchDeltaMag - touchDeltaMag;
 
-        Camera.main.orthographicSize += deltaMagDiff * zoomSpeed;
-        Camera.main.orthographicSize = Mathf.Max(Camera.main.orthographicSize, 0.1f);
+        mainCamera.orthographicSize += deltaMagDiff * zoomSpeed;
+        mainCamera.orthographicSize = Mathf.Max(Camera.main.orthographicSize, 0.1f);
     }
 
     void TouchMove()
