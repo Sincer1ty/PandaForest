@@ -10,7 +10,8 @@ public class ObjectDetector : MonoBehaviour
     private Camera      mainCamera;
     private Ray         ray;
     private RaycastHit  hit;
-    
+
+    public Panel_Inventory panel_Inventory;
     private void Awake()
     {
         mainCamera = Camera.main;
@@ -23,12 +24,17 @@ public class ObjectDetector : MonoBehaviour
         {
             ray = mainCamera.ScreenPointToRay(Input.mousePosition);
 
-            
             if (Physics.Raycast(ray, out hit, Mathf.Infinity))
             {
                 if (hit.transform.CompareTag("Tile"))
                 {
                     facilitySpawner.SpawnFacility(hit.transform);
+                }
+
+                if (hit.transform.CompareTag("Building"))
+                {
+                    Debug.Log("Inventory Open");
+                    panel_Inventory.Show();
                 }
             }
         }
