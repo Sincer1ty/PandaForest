@@ -1,21 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using System.Text;
+using TMPro;
 
+[System.Serializable]
 public class CharInfo
 {
-    string charName;
+    public string charName;
 }
 
 public class Panel_Inventory : MonoBehaviour
 {
     GameObject CharSlot = null;
     Dictionary<string, GameObject> MyChilderen = new Dictionary<string, GameObject>();
-    List<CharInfo> CharInfoList = new List<CharInfo>();
+    public List<CharInfo> CharInfoList = new List<CharInfo>();
     List<GameObject> MyCharList = new List<GameObject>();
-    List<GameObject> MyCharListRe = new List<GameObject>();
+
+    public TMP_Text ExplanationTxt;
 
     // Start is called before the first frame update
     void Awake()
@@ -39,12 +41,6 @@ public class Panel_Inventory : MonoBehaviour
 
     private void Start()
     {
-        for (int i = 0; i< 8; ++i)
-        {
-            CharInfo info = new CharInfo();
-            CharInfoList.Add(info);
-        }
-
         CreateCharList(CharInfoList);
     }
 
@@ -56,41 +52,30 @@ public class Panel_Inventory : MonoBehaviour
             CharSlot.SetActive(false);
         }
 
-        for(int i = 0; i < MyCharList.Count; ++i)
+        if (MyCharList.Count <= 0)
         {
-            MyCharList[i].SetActive(false);
-            MyCharListRe.Add(MyCharList[i]);
-        }
-        MyCharList.Clear();
-
-        for(int i = 0; i < _CharInfoList.Count; ++i)
-        {
-            GameObject NewChar;
-
-            if(MyCharListRe.Count > 0)
+            for (int i = 0; i < _CharInfoList.Count; ++i)
             {
-                NewChar = MyCharListRe[0];
-                MyCharListRe.RemoveAt(0);
+                Debug.Log("Create Char");
 
-                //...
-            }
-            else
-            {
+                GameObject NewChar;
+
+                //슬롯 생성
                 NewChar = Instantiate<GameObject>(CharSlot);
 
-                //...
+                //슬롯 이름 설정
+                StringBuilder NameBuilder = new StringBuilder();
+                NameBuilder.Append("CharSlot_");
+                NameBuilder.Append(i + 1);
+                NewChar.name = NameBuilder.ToString();
+
+                //슬롯 위치 및 크기 설정
+                NewChar.transform.SetParent(CharSlot.transform.parent);
+                NewChar.transform.localScale = CharSlot.transform.localScale;
+
+                NewChar.SetActive(true);
+                MyCharList.Add(NewChar);
             }
-
-            StringBuilder NameBuilder = new StringBuilder();
-            NameBuilder.Append("CjarSlot_");
-            NameBuilder.Append(i + 1);
-            NewChar.name = NameBuilder.ToString();
-
-            NewChar.transform.SetParent(CharSlot.transform.parent);
-            NewChar.transform.localScale = CharSlot.transform.localScale;
-
-            NewChar.SetActive(true);
-            MyCharList.Add(NewChar);
         }
     }
 
@@ -106,6 +91,6 @@ public class Panel_Inventory : MonoBehaviour
         builder.Append(clickedObj.name);
         print(builder.ToString());
 
-        
+        //ExplanationTxt.text = CharInfoList[idx].charName;
     }
 }

@@ -1,0 +1,465 @@
+fileFormatVersion: 2
+guid: 80c7f5bfdab6401498518dff2c42650c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Character_Panda_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 918
+        width: 240
+        height: 390
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd278ce389c7fc46b57b528a25c4b92
+      internalID: 1264671853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Panda_1
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 912
+        width: 242
+        height: 390
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 481bd01528b9fd8468aa601d709441b8
+      internalID: -966981409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Panda_2
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 922
+        width: 247
+        height: 386
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7158c38a69dc324884943d70ac0deaf
+      internalID: -556509623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Panda_3
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 912
+        width: 243
+        height: 402
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ae815da612afe4a8bbc22b9dbe8a69
+      internalID: -1957516528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Panda_4
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 915
+        width: 240
+        height: 406
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b74ed398a5316a04a8fbb93e4f41566b
+      internalID: -1535649573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Panda_6
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 492
+        width: 242
+        height: 394
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2416732e92ac114ca81a101c775e37c
+      internalID: 364701916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Panda_5
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 492
+        width: 247
+        height: 390
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c4a2e83712dee42bcfc1004ad3102d
+      internalID: 302084927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Panda_7
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 495
+        width: 252
+        height: 375
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb79e5feeb84ac47acd4f6c0bfc28b1
+      internalID: -627098884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Panda_8
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 489
+        width: 261
+        height: 375
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b0444529e407d45aa286d34e4827fd
+      internalID: 118724476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Panda_9
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 492
+        width: 240
+        height: 390
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f20f23d2fff384ba5085e8e4518b05
+      internalID: -900757936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Panda_11
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 69
+        width: 428
+        height: 408
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a73549780aa8ea84bb6e5b4740f237fc
+      internalID: 1855436057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Panda_12
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 84
+        width: 251
+        height: 390
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f52fbb88433b994f8a19375e7c43ac1
+      internalID: 1969289301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Panda_13
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 78
+        width: 243
+        height: 402
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 635c432b920627945ba2580e016a49e2
+      internalID: -1337823466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Panda_10
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 66
+        width: 276
+        height: 380
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb91cc9791e8c74c9462a7d0c63fd97
+      internalID: -1233809477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Character_Panda_0: 1264671853
+      Character_Panda_1: -966981409
+      Character_Panda_10: -1233809477
+      Character_Panda_11: 1855436057
+      Character_Panda_12: 1969289301
+      Character_Panda_13: -1337823466
+      Character_Panda_2: -556509623
+      Character_Panda_3: -1957516528
+      Character_Panda_4: -1535649573
+      Character_Panda_5: 302084927
+      Character_Panda_6: 364701916
+      Character_Panda_7: -627098884
+      Character_Panda_8: 118724476
+      Character_Panda_9: -900757936
+      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_10": 302084927
+      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_14": -900757936
+      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_16": -1041012007
+      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_17": 1855436057
+      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_22": -667707499
+      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_23": -1350340628
+      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_24": 710824786
+      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_25": -1714011819
+      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_26": -877575919
+      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_27": -1831967328
+      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_28": 672237190
+      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_29": -114517918
+      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_3": 496168902
+      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_30": -1467231313
+      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_4": 164773888
+      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_5": -1957516528
+      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_8": 364701916
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
