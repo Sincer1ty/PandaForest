@@ -126,93 +126,9 @@ TextureImporter:
       name: Character_Panda_0
       rect:
         serializedVersion: 2
-        x: 30
-        y: 918
-        width: 240
-        height: 390
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2dd278ce389c7fc46b57b528a25c4b92
-      internalID: 1264671853
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_Panda_1
-      rect:
-        serializedVersion: 2
-        x: 292
-        y: 912
-        width: 242
-        height: 390
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 481bd01528b9fd8468aa601d709441b8
-      internalID: -966981409
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_Panda_2
-      rect:
-        serializedVersion: 2
-        x: 543
-        y: 922
-        width: 247
-        height: 386
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7158c38a69dc324884943d70ac0deaf
-      internalID: -556509623
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_Panda_3
-      rect:
-        serializedVersion: 2
-        x: 799
-        y: 912
-        width: 243
-        height: 402
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d4ae815da612afe4a8bbc22b9dbe8a69
-      internalID: -1957516528
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_Panda_4
-      rect:
-        serializedVersion: 2
-        x: 1065
-        y: 915
-        width: 240
+        x: 20
+        y: 910
+        width: 262
         height: 406
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -221,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b74ed398a5316a04a8fbb93e4f41566b
-      internalID: -1535649573
+      spriteID: 9608302bc244f4f49a95736726cf44fc
+      internalID: -1997680002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_Panda_6
+      name: Character_Panda_2
       rect:
         serializedVersion: 2
-        x: 310
-        y: 492
-        width: 242
-        height: 394
+        x: 536
+        y: 911
+        width: 262
+        height: 406
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,8 +158,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2416732e92ac114ca81a101c775e37c
-      internalID: 364701916
+      spriteID: a834115c055c4a544a95b29443cfc119
+      internalID: 113290754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Panda_3
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 911
+        width: 276
+        height: 406
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a49a2753b6521e418fbcded84d36d86
+      internalID: -1804087319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Panda_1
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 906
+        width: 262
+        height: 406
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e592b2b0348c42f4ca4f2e31e0edf0f9
+      internalID: -2024021625
       vertices: []
       indices: 
       edges: []
@@ -252,10 +210,10 @@ TextureImporter:
       name: Character_Panda_5
       rect:
         serializedVersion: 2
-        x: 34
-        y: 492
-        width: 247
-        height: 390
+        x: 28
+        y: 491
+        width: 262
+        height: 406
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26c4a2e83712dee42bcfc1004ad3102d
-      internalID: 302084927
+      spriteID: a3a15d153fbabc142aa4d7e695c630c2
+      internalID: -1728250950
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_Panda_7
+      name: Character_Panda_4
       rect:
         serializedVersion: 2
-        x: 566
-        y: 495
-        width: 252
-        height: 375
+        x: 1099
+        y: 911
+        width: 276
+        height: 409
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,8 +242,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcb79e5feeb84ac47acd4f6c0bfc28b1
-      internalID: -627098884
+      spriteID: b55031b1b8951f542ba3c11dbe7592b8
+      internalID: -1229151659
       vertices: []
       indices: 
       edges: []
@@ -294,10 +252,10 @@ TextureImporter:
       name: Character_Panda_8
       rect:
         serializedVersion: 2
-        x: 810
-        y: 489
-        width: 261
-        height: 375
+        x: 858
+        y: 488
+        width: 276
+        height: 406
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,8 +263,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4b0444529e407d45aa286d34e4827fd
-      internalID: 118724476
+      spriteID: d20a33b9be08a894cbb437b1ee12cd0e
+      internalID: -1689932128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Panda_6
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 488
+        width: 276
+        height: 406
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d26eff7fc3ea756438a85b6896a5ba18
+      internalID: 2032110755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Panda_7
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 489
+        width: 276
+        height: 406
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e6549ada914a84fa3150542ab338dc
+      internalID: 625484079
       vertices: []
       indices: 
       edges: []
@@ -315,10 +315,10 @@ TextureImporter:
       name: Character_Panda_9
       rect:
         serializedVersion: 2
-        x: 1080
-        y: 492
-        width: 240
-        height: 390
+        x: 1128
+        y: 491
+        width: 255
+        height: 406
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -326,8 +326,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4f20f23d2fff384ba5085e8e4518b05
-      internalID: -900757936
+      spriteID: 6987fe8dfcb427a4d8ddf64fe9137731
+      internalID: -1986378674
       vertices: []
       indices: 
       edges: []
@@ -336,10 +336,10 @@ TextureImporter:
       name: Character_Panda_11
       rect:
         serializedVersion: 2
-        x: 316
-        y: 69
-        width: 428
-        height: 408
+        x: 305
+        y: 68
+        width: 419
+        height: 411
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,8 +347,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a73549780aa8ea84bb6e5b4740f237fc
-      internalID: 1855436057
+      spriteID: 66764aa6282fdc343a76514214ad1d3f
+      internalID: -2112738222
       vertices: []
       indices: 
       edges: []
@@ -357,10 +357,10 @@ TextureImporter:
       name: Character_Panda_12
       rect:
         serializedVersion: 2
-        x: 835
-        y: 84
-        width: 251
-        height: 390
+        x: 874
+        y: 83
+        width: 274
+        height: 406
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -368,8 +368,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f52fbb88433b994f8a19375e7c43ac1
-      internalID: 1969289301
+      spriteID: 90e8be067fecece4cbc3bff03f671d58
+      internalID: -2070861923
       vertices: []
       indices: 
       edges: []
@@ -378,10 +378,10 @@ TextureImporter:
       name: Character_Panda_13
       rect:
         serializedVersion: 2
-        x: 1090
-        y: 78
-        width: 243
-        height: 402
+        x: 1132
+        y: 81
+        width: 273
+        height: 406
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -389,8 +389,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 635c432b920627945ba2580e016a49e2
-      internalID: -1337823466
+      spriteID: bdd9de54f0192ea4f8e61953aae37c93
+      internalID: 967731577
       vertices: []
       indices: 
       edges: []
@@ -399,10 +399,10 @@ TextureImporter:
       name: Character_Panda_10
       rect:
         serializedVersion: 2
-        x: 18
-        y: 66
-        width: 276
-        height: 380
+        x: 40
+        y: 61
+        width: 262
+        height: 406
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -410,8 +410,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bb91cc9791e8c74c9462a7d0c63fd97
-      internalID: -1233809477
+      spriteID: 8289d055f39afe84bb1101e02da9c3c7
+      internalID: -2100902942
       vertices: []
       indices: 
       edges: []
@@ -427,37 +427,157 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Character_Panda_0: 1264671853
-      Character_Panda_1: -966981409
-      Character_Panda_10: -1233809477
-      Character_Panda_11: 1855436057
-      Character_Panda_12: 1969289301
-      Character_Panda_13: -1337823466
-      Character_Panda_2: -556509623
-      Character_Panda_3: -1957516528
-      Character_Panda_4: -1535649573
-      Character_Panda_5: 302084927
-      Character_Panda_6: 364701916
-      Character_Panda_7: -627098884
-      Character_Panda_8: 118724476
-      Character_Panda_9: -900757936
-      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_10": 302084927
-      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_14": -900757936
-      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_16": -1041012007
-      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_17": 1855436057
-      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_22": -667707499
-      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_23": -1350340628
-      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_24": 710824786
-      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_25": -1714011819
-      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_26": -877575919
-      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_27": -1831967328
-      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_28": 672237190
-      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_29": -114517918
-      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_3": 496168902
-      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_30": -1467231313
-      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_4": 164773888
-      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_5": -1957516528
-      "\uCE90\uB9AD\uD130_\uBB34\uD55C\uBD88\uC131_8": 364701916
+      Character_Panda_0: -1997680002
+      Character_Panda_1: -2024021625
+      Character_Panda_10: -2100902942
+      Character_Panda_100: -1735642530
+      Character_Panda_101: 2098613973
+      Character_Panda_102: -1916743247
+      Character_Panda_103: 947770937
+      Character_Panda_104: 1902179761
+      Character_Panda_105: -1733876374
+      Character_Panda_106: 218154603
+      Character_Panda_108: -389981617
+      Character_Panda_109: -1690610037
+      Character_Panda_11: -2112738222
+      Character_Panda_110: -1868669075
+      Character_Panda_111: -1600136803
+      Character_Panda_112: -1056548378
+      Character_Panda_113: 1358504026
+      Character_Panda_114: 1880375492
+      Character_Panda_115: -1511954435
+      Character_Panda_116: 1312335920
+      Character_Panda_117: 711375907
+      Character_Panda_118: -1480041722
+      Character_Panda_119: -235602506
+      Character_Panda_12: -2070861923
+      Character_Panda_120: -1534683585
+      Character_Panda_121: 1601652696
+      Character_Panda_122: -189403667
+      Character_Panda_123: 1926193922
+      Character_Panda_124: 410820277
+      Character_Panda_125: -2072604020
+      Character_Panda_126: 2074788923
+      Character_Panda_127: -1328109903
+      Character_Panda_128: 104142786
+      Character_Panda_129: -300693264
+      Character_Panda_13: 967731577
+      Character_Panda_130: -231474761
+      Character_Panda_131: 1398017730
+      Character_Panda_132: -1606380775
+      Character_Panda_133: 1720864803
+      Character_Panda_134: -582488051
+      Character_Panda_135: -929913619
+      Character_Panda_136: 461824097
+      Character_Panda_137: -806360806
+      Character_Panda_138: -1124915544
+      Character_Panda_139: 324990815
+      Character_Panda_14: 61208350
+      Character_Panda_140: 778234364
+      Character_Panda_141: 1545404381
+      Character_Panda_142: 2095232065
+      Character_Panda_143: -189162025
+      Character_Panda_144: 1208341076
+      Character_Panda_145: -1601144542
+      Character_Panda_146: 573861449
+      Character_Panda_147: 1203675514
+      Character_Panda_148: -1526491956
+      Character_Panda_149: -972316322
+      Character_Panda_150: -904005405
+      Character_Panda_151: -322311152
+      Character_Panda_152: 788884431
+      Character_Panda_153: -2136275786
+      Character_Panda_154: 598419767
+      Character_Panda_155: 1908141638
+      Character_Panda_156: 721837685
+      Character_Panda_157: -149419090
+      Character_Panda_158: 2086707747
+      Character_Panda_159: 1577539790
+      Character_Panda_16: 59109527
+      Character_Panda_160: -790021524
+      Character_Panda_161: -892662509
+      Character_Panda_17: 1874658753
+      Character_Panda_18: 244201887
+      Character_Panda_19: -428963853
+      Character_Panda_2: 113290754
+      Character_Panda_20: 352475627
+      Character_Panda_21: -608821372
+      Character_Panda_22: 1643759100
+      Character_Panda_23: -734771446
+      Character_Panda_24: -675652077
+      Character_Panda_25: -572609777
+      Character_Panda_26: -1114370194
+      Character_Panda_27: -182937987
+      Character_Panda_28: -842728592
+      Character_Panda_29: -754873653
+      Character_Panda_3: -1804087319
+      Character_Panda_30: 508481924
+      Character_Panda_31: 1129354633
+      Character_Panda_32: -1941892801
+      Character_Panda_33: -1476847594
+      Character_Panda_35: -337944374
+      Character_Panda_36: 909555969
+      Character_Panda_37: 885225459
+      Character_Panda_38: -2142128829
+      Character_Panda_4: -1229151659
+      Character_Panda_40: -213426018
+      Character_Panda_41: 219452459
+      Character_Panda_42: -489587952
+      Character_Panda_43: 1566195025
+      Character_Panda_44: -1993404183
+      Character_Panda_45: -455539136
+      Character_Panda_46: 313220438
+      Character_Panda_47: 1046086500
+      Character_Panda_48: 1259777767
+      Character_Panda_49: 309528503
+      Character_Panda_5: -1728250950
+      Character_Panda_50: 927796883
+      Character_Panda_51: -1808789035
+      Character_Panda_52: -1038578088
+      Character_Panda_55: -1400482238
+      Character_Panda_56: 1783442356
+      Character_Panda_57: 1845966819
+      Character_Panda_58: 1506089371
+      Character_Panda_59: 1078895857
+      Character_Panda_6: 2032110755
+      Character_Panda_60: -1985923245
+      Character_Panda_62: -775740474
+      Character_Panda_63: -1062092902
+      Character_Panda_65: 432143835
+      Character_Panda_66: -1629162956
+      Character_Panda_67: 1839841256
+      Character_Panda_68: -1984848959
+      Character_Panda_69: -347570503
+      Character_Panda_7: 625484079
+      Character_Panda_70: 414088223
+      Character_Panda_71: -88466748
+      Character_Panda_72: -787399063
+      Character_Panda_73: -1383373166
+      Character_Panda_74: -1495628177
+      Character_Panda_75: -173587036
+      Character_Panda_76: 318292329
+      Character_Panda_77: 1613530443
+      Character_Panda_78: -1833783806
+      Character_Panda_79: -1138606757
+      Character_Panda_8: -1689932128
+      Character_Panda_80: 359652280
+      Character_Panda_81: 1795520524
+      Character_Panda_82: 1546353967
+      Character_Panda_84: 1397057342
+      Character_Panda_85: -934283588
+      Character_Panda_86: 254944728
+      Character_Panda_87: 908797062
+      Character_Panda_88: 948163893
+      Character_Panda_89: 2034601512
+      Character_Panda_9: -1986378674
+      Character_Panda_90: 1058010724
+      Character_Panda_91: 396928930
+      Character_Panda_93: 1369858344
+      Character_Panda_94: -2108324123
+      Character_Panda_95: -1667208050
+      Character_Panda_97: 793579992
+      Character_Panda_98: -1979026289
+      Character_Panda_99: -1404126907
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
