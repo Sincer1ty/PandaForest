@@ -28,43 +28,61 @@ public class StructureSpawner : MonoBehaviour
         // 밭 건설 버튼을 눌렀다고 설정
         isOnFieldButton = true;
 
-        // 마우스를 따라다니는 임시 타워 생성
+        // 마우스를 따라다니는 임시 구조물 생성
         followFieldClone = Instantiate( fieldTemplate.followFieldPrefab );
-        // followFieldClone = Instantiate(StructurePrefab);
+        
+        // 건설을 취소할 수 있는 코루틴 함수 시작
+        StartCoroutine("OnFieldCancelSystem");
     }
+
+
 
     public void SpawnStructure(Transform tileTransform) 
     {
-        // 타워 건설 버튼을 눌렀을 때만 타워 건설 가능
-        if(isOnFieldButton == false)
-        {
-            return;
-        }
-
         Structure structure = tileTransform.GetComponent<Structure>();
-        
-        // 타워 건설 가능 여부 확인
-        // 1. 현재 타일의 위치에 이미 타워가 건설되어 있으면 타워 건설 X
-        if ( structure.IsBuildStructure == true)
+
+        //  여기서부터 확인
+        // 건설 버튼을 눌렀을 때 && 현재 타일 위치에 건설되어있지 않을 때
+        if (isOnFieldButton == true && structure.IsBuildStructure == false)
         {
-            return;
+            // 다시 건설 버튼을 눌러서 건설하도록 변수 설정
+            isOnFieldButton = false;
+
+            // 건물이 건설되어 있음으로 설정
+            structure.IsBuildStructure = true;
+
+            // 선택한 타일의 위치에 건축물 건설
+            // Instantiate(StructurePrefab, tileTransform.position, Quaternion.identity);
+            Vector3 position = tileTransform.position + Vector3.back;
+            GameObject clone = Instantiate(fieldTemplate.fieldPrefab, position, Quaternion.identity);
+
+            // 타워 무기에 enemySpawner, playerGold, tile 정보 전달 => 추후 구현
+
+            // 배치했기 때문에 마우스를 따라다니는 임시 구조물 삭제
+            Destroy(followFieldClone);
+            // 건설을 취소할 수 있는 코루틴 함수 중지
+            StopCoroutine("OnFieldCancelSystem");
+
+            
         }
 
-        // 다시 타워 건설 버튼을 눌러서 타워를 건설하도록 변수 설정
-        isOnFieldButton = false;
 
-        // 타워가 건설되어 있음으로 설정
-        structure.IsBuildStructure = true;
+    }
 
-        // 선택한 타일의 위치에 건축물 건설
-        // Instantiate(StructurePrefab, tileTransform.position, Quaternion.identity);
-        Vector3 position = tileTransform.position + Vector3.back;
-        GameObject clone = Instantiate(fieldTemplate.fieldPrefab, position, Quaternion.identity);
-
-        // 타워 무기에 enemySpawner, playerGold, tile 정보 전달 => 추후 구현
-
-        // 타워를 배치했기 때문에 마우스를 따라다니는 임시 타워 삭제
-        Destroy(followFieldClone);
+    private IEnumerator OnFieldCancelSystem()
+    {
+        while(true)
+        {
+            // ESC키 또는 마우스 오른쪽 버튼을 눌렀을 때 타워 건설 취소
+            if(Input.GetKeyDown(KeyCode.Escape) || Input.GetMouseButtonDown(1))
+            {
+                isOnFieldButton = false;
+                // 마우스를 따라다니는 임시 구조물 삭제
+                Destroy(followFieldClone);
+                break;
+            }
+            yield return null;
+        }
     }
 
 }

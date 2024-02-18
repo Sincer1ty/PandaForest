@@ -47,8 +47,8 @@ public class PandaAI : MonoBehaviour
         float rand_x, rand_y;
         rand_x = Random.Range(-1.0f, 1.0f);
         rand_y = Random.Range(-1.0f, 1.0f);
-        Debug.Log(rand_x);
-        Debug.Log(rand_y);
+        // Debug.Log(rand_x);
+        // Debug.Log(rand_y);
 
         // 움직이는 방향이 (0,0)이면 움직이지 않으니 제외
         // 추후 움직이지 않고 서있는 애니메이션 넣을지...?
@@ -59,7 +59,7 @@ public class PandaAI : MonoBehaviour
         }
 
         direction = new Vector2(rand_x, rand_y).normalized;
-        Debug.Log(direction);
+        // Debug.Log(direction);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

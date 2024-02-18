@@ -39,6 +39,8 @@ public class ObjectDetector : MonoBehaviour
                     // 타워를 생성하는 SpawnTower() 호출
                     structureSpawner.SpawnStructure(hit.transform);
                 }
+
+
             }
         }
     }
