@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49bb4e0c199688c4b95bb0637119b78f, type: 3}
+  m_Name: FieldCanon
+  m_EditorClassIdentifier: 
+  fieldPrefab: {fileID: 5600989832169903706, guid: c06792ed90125004f8d1109f4d547d7a, type: 3}
+  followFieldPrefab: {fileID: 1902079149140675485, guid: 1df9ec596efe6e44dbb2dc506940f00e, type: 3}
