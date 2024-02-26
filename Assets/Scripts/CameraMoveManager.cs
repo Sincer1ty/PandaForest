@@ -9,7 +9,7 @@ public class CameraMoveManager : MonoBehaviour
     private Vector3 movePos;
 
     private Camera mainCamera;
-    public float zoomSpeed = 0.5f;
+    public float zoomSpeed = 0.25f;
 
     private void Awake()
     {
@@ -27,6 +27,8 @@ public class CameraMoveManager : MonoBehaviour
 
     void Zoom()
     {
+        Debug.Log("Zoom");
+
         Touch touchZero = Input.GetTouch(0);
         Touch touchOne = Input.GetTouch(1);
 
@@ -38,8 +40,9 @@ public class CameraMoveManager : MonoBehaviour
 
         float deltaMagDiff = prevTouchDeltaMag - touchDeltaMag;
 
-        mainCamera.orthographicSize += deltaMagDiff * zoomSpeed;
-        mainCamera.orthographicSize = Mathf.Max(Camera.main.orthographicSize, 0.1f);
+        mainCamera.orthographicSize += deltaMagDiff * zoomSpeed * Time.deltaTime;
+        mainCamera.orthographicSize = Mathf.Max(Camera.main.orthographicSize, 0.8f);
+        mainCamera.orthographicSize = Mathf.Min(Camera.main.orthographicSize, 8f);
     }
 
     void TouchMove()
