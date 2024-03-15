@@ -88,6 +88,7 @@ public class Panel_Inventory : MonoBehaviour
         }
     }
 
+    //UIPopup
     public void Show()
     {
         transform.gameObject.SetActive(true);
@@ -95,14 +96,15 @@ public class Panel_Inventory : MonoBehaviour
         //패널 배경 일시정지
         Time.timeScale = 0;
     }
+    
+    //UIPopup
+    //public void Close()
+    //{
+    //    transform.gameObject.SetActive(false);
 
-    public void Close()
-    {
-        transform.gameObject.SetActive(false);
-
-        //패널 배경 재시동
-        Time.timeScale = 1f;
-    }
+    //    //패널 배경 재시동
+    //    Time.timeScale = 1f;
+    //}
 
     public void OnClicked(GameObject clickedObj)
     {

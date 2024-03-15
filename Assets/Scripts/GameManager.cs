@@ -4,10 +4,36 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance;
+    private static GameManager instance;
 
-    private void Awake()
+    public static GameManager Instance
     {
-        instance = this;
+        get
+        {
+            if (!instance) //null 이면
+            {
+                instance = FindObjectOfType<GameManager>();
+                
+                if (!instance)
+                {
+                    Debug.LogWarning("GameManager를 생성합니다.");
+                    GameObject container = new GameObject();
+                    container.name = "GameManager";
+                    instance = container.AddComponent<GameManager>();
+                }
+            }
+            return instance;
+        }
     }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+    }
+
 }
+
+ 
