@@ -63,6 +63,8 @@ public class Drag : MonoBehaviour
     // 마우스 드래그
     void OnMouseDrag() 
     {
+        // 편집모드 활성화 시 추가
+
         if (isOnPlacementButton == false) 
         {            
             return;

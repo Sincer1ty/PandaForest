@@ -11,7 +11,7 @@ public class InputManager : MonoBehaviour
 
     private Vector3 lastPosition;
 
-    // 2D이기 때문에 필요 없음..? => 추후 GetSelectedMapPosition 수정 필요
+    // 추후 GetSelectedMapPosition 수정 필요
     // [SerializeField]
     // private LayerMask placementLayermask; // 그리드로 사용하려는 평면만 감지
 
