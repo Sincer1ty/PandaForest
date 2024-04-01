@@ -1,42 +1,81 @@
-using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class UIPanel : MonoBehaviour
 {
-    public List<PanelModel> Panels;
+    //싱글턴
+    private static UIPanel instance;
 
-    //public void Show()
-    //{
-    //    if (popupCanvas != null)
-    //    {
-    //        popupCanvas.SetActive(true);
-    //    }
-
-    //    //패널 배경 일시정지
-    //    Time.timeScale = 0;
-    //}
-
-    //public void Close()
-    //{
-    //    if (popupCanvas != null)
-    //    {
-    //        popupCanvas.SetActive(false);
-    //    }
-
-    //    //패널 배경 재시동
-    //    Time.timeScale = 1f;
-    //}
-
-    // Start is called before the first frame update
-    void Start()
+    public static UIPanel Instance
     {
-        
+        get
+        {
+            if (!instance) //null 이면
+            {
+                instance = FindObjectOfType<UIPanel>();
+
+                if (!instance)
+                {
+                    Debug.LogWarning("UIPanel를 생성합니다.");
+                    GameObject container = new GameObject();
+                    container.name = "UIPanel";
+                    instance = container.AddComponent<UIPanel>();
+                }
+            }
+            return instance;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public List<PanelModel> Panels;
+
+    private Queue<PanelInstanceModel> queue = new Queue<PanelInstanceModel>();
+
+    public void Show(string panelId)
     {
+        PanelModel panelModel = Panels.FirstOrDefault(panel => panel.PanelId == panelId);
+        Debug.Log("Show "+panelId);
         
+        if(panelModel != null)
+        {
+            Debug.Log(panelModel.PanelId);
+
+            var newInstancePanel = Instantiate(panelModel.PanelPrefab, transform);
+
+            queue.Enqueue(new PanelInstanceModel
+            {
+                PanelId = panelId,
+                PanelInstance = newInstancePanel
+            });
+        }
+        else
+        {
+            Debug.LogWarning($"Trying to use panelId = {panelId}, but this is not found in Panels");
+        }
+        
+        Time.timeScale = 0;
+    }
+
+    public void Close()
+    {
+        if (AnyPanelShowing())
+        {
+            var lastPanel = queue.Dequeue();
+
+            Destroy(lastPanel.PanelInstance);
+        }
+
+        //패널 배경 재시동
+        Time.timeScale = 1f;
+    }
+
+    public bool AnyPanelShowing()
+    {
+        return GetAmountPanelsInQueue() > 0;
+    }
+
+    public int GetAmountPanelsInQueue()
+    {
+        return queue.Count;
     }
 }

@@ -28,12 +28,6 @@ public class UIManager : MonoBehaviour
 
     //private Stack<UIPopup> openPopups = new Stack<UIPanel>();
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -44,13 +38,16 @@ public class UIManager : MonoBehaviour
         //}
     }
 
-    //public void OpenPopup(UIPanel popup)
-    //{
-    //    if(popup != null)
-    //    {
-    //        //팝업 열기
-    //    }
-    //}
+    public void OpenPopup(UIPopup popup)
+    {
+        //조건 보충 필요
+        if (popup != null)
+        {
+            //팝업 열기
+            popup.Show();
+            //openPopups.Push(popup);
+        }
+    }
 
 
 }

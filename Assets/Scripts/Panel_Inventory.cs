@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Text;
@@ -28,8 +27,6 @@ public class Panel_Inventory : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        transform.gameObject.SetActive(false);
-
         SetChildrenMap(gameObject);
     }
 
@@ -87,25 +84,7 @@ public class Panel_Inventory : MonoBehaviour
             }
         }
     }
-
-    //UIPopup
-    public void Show()
-    {
-        transform.gameObject.SetActive(true);
-
-        //패널 배경 일시정지
-        Time.timeScale = 0;
-    }
     
-    //UIPopup
-    //public void Close()
-    //{
-    //    transform.gameObject.SetActive(false);
-
-    //    //패널 배경 재시동
-    //    Time.timeScale = 1f;
-    //}
-
     public void OnClicked(GameObject clickedObj)
     {
         //Console print

@@ -30,10 +30,14 @@ public class GameManager : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            Application.Quit();
+            Save();
         }
     }
 
-}
+    public void Save()
+    {
+        Debug.Log("Save");
+        Application.Quit();
+    }
 
- 
+}

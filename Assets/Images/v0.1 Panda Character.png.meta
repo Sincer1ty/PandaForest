@@ -1,0 +1,1834 @@
+fileFormatVersion: 2
+guid: b8e9142746f07c846b4151880316691e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: v0.1 Panda Character_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 918
+        width: 289
+        height: 390
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e48687106196942b2a33ad0a4722d1
+      internalID: 881956446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 1302
+        width: 34
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0b3d1c28f9ba1649b7f6c1b8608b448
+      internalID: -2074764446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_2
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1272
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cae9db0274fc864e940b709f00e30fd
+      internalID: -1532293938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_3
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1278
+        width: 36
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5949fc8907c37ce4a9f98ee145bbb0d5
+      internalID: -1284850081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_4
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 1231
+        width: 60
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd571768280b0b4685004b45bb2cd32
+      internalID: 1829290215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_5
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 1296
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace24ee2d2d8e5d4a9a43751e00cc88d
+      internalID: -545457429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_6
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 1266
+        width: 29
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b9eae13c4282db478faedfadb6b91da
+      internalID: -1272787010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_7
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 1266
+        width: 185
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ef414f2f1addfb489f8991d320259ac
+      internalID: -2112287355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_8
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 922
+        width: 256
+        height: 386
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a15bbb0480ad344aad7bb451af8e91a
+      internalID: -1534180833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_9
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 1278
+        width: 29
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c5a76fd6739a0c4984d36f096b93722
+      internalID: -164236265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_10
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 1260
+        width: 54
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6431a3114618de4682c96161daa1c45
+      internalID: 1218546055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_11
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 885
+        width: 284
+        height: 436
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87c687f19170285459630b7110ab267c
+      internalID: -509216967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_12
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 1290
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6290bae44fbf7fe4f8af2ea9aeac3d4b
+      internalID: -558317997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_13
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 1272
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40479e071b6bf9443a44c85239b05ee9
+      internalID: -67465239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_14
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1272
+        width: 12
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cf55a910d418aa469ebdac46c1e0df0
+      internalID: -678166427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_15
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 912
+        width: 242
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e69bdcd34545e4485bee612e3c1b1e
+      internalID: -941148361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_16
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 1237
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53228b8046dc3af49a52fad08b770192
+      internalID: -1966941024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_17
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 1188
+        width: 20
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecaa6fc133fc69a4fac9637970c50065
+      internalID: 1606294225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_18
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 1122
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be507b5804c1dc340b9e4e93362b66bb
+      internalID: -1734701356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_19
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1134
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 930cd507e88bfe446a75137a00b4ab02
+      internalID: 1704107445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_20
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 1128
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e9dadee3f3c6e449ce1b7a326a1f95
+      internalID: 1188019695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1074
+        width: 18
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac5a25eb3e3c944aa19e78b60d79c8d
+      internalID: -1486411711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_22
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1110
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3216a4fddd1efc4a8857e188643a6b2
+      internalID: 945951811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_23
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 1060
+        width: 17
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d1d348e99d9cf8408183f45fd69620f
+      internalID: -2058319231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 989
+        width: 72
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a359493fc67e84447913de6f71d178d8
+      internalID: 1771331274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_25
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 993
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d102cc814d4054fb1454426857a520
+      internalID: -519471727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_26
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1002
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04862b38fe77bd44a95d6414eed16497
+      internalID: 318014923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_27
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 1008
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf8b29f12a06ba4988bfb0fcb9de10b
+      internalID: -1045329132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_28
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 492
+        width: 286
+        height: 474
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 268e522ffd27bef4c9ed57a19ed79afa
+      internalID: -1821455952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_29
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 894
+        width: 78
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 065ed2beb422afb42aecab9cee589adf
+      internalID: -764278457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_30
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 961
+        width: 5
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79482fcc5a58e544f975ec13fa183e1f
+      internalID: -475036742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_31
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 890
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab096784a997beb4a8a494a63a79826d
+      internalID: -868281351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_32
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 898
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bc49fbd83fcd5846ac6cc2c2cf9b3a6
+      internalID: 1948252473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_33
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 907
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5239b7d1701a5434fbd1ab4d1a781324
+      internalID: 1088522620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_34
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 900
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d670cad5b15a7f4dac383b545d2ff41
+      internalID: -1916305906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_35
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 894
+        width: 53
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d364d0f554976a438dc0b90b85e1436
+      internalID: -16883676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_36
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 55
+        width: 572
+        height: 857
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e57537f31c0914bb58c53751bcb303
+      internalID: -686671943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_37
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 901
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17184084a1e6ae846ad80c76791d65ec
+      internalID: -180841426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_38
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 69
+        width: 599
+        height: 825
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10a8441377ff3bc4697fc519a391756f
+      internalID: -879913234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_39
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 864
+        width: 11
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f790990e56c3a1a43874695ed673b284
+      internalID: 591394196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_40
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 893
+        width: 26
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f6e2030eef5ed4a923a3b820460889
+      internalID: 779233137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_41
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 864
+        width: 11
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adc0d3bad852c504082e6cd045914d98
+      internalID: 1246855459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_42
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 864
+        width: 7
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e953fe424d321bc48a0f3ee34c67f037
+      internalID: -552077346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_43
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 488
+        width: 23
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf5e01290d329844e8cf90eacfb661b8
+      internalID: 661758773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_44
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 469
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57df1027d7eb65c44ab6f35e3646ae9d
+      internalID: -153923653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_45
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 468
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea0936408d901d4488f169e199ee169
+      internalID: -1795896520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_46
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 444
+        width: 53
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c284f704d13de469e3fea2454c177a
+      internalID: 1200771812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_47
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 450
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b7173177d75c4d408a33dc6556fbb40
+      internalID: -1319507010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_48
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 475
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 023e03da19fcba748bbe498858fb87fc
+      internalID: 884947844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_49
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 463
+        width: 23
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8cbe191675571f439459ee9578ba188
+      internalID: -864427266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_50
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 462
+        width: 17
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2d4497deaf62714aade8f682d665d99
+      internalID: 565871596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_51
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 420
+        width: 54
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2adc4c3c79cb0214da2edc12d0d797bb
+      internalID: 473756313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_52
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 456
+        width: 27
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c0fbdcc6d85de4459fb0237a553e0c8
+      internalID: -2083556328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_53
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 450
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b70e0c6b0ec6e4396f8f0173b409d3
+      internalID: 559223368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_54
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 408
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ecce3292db1a5244a34fa11a8fcb69e
+      internalID: -992752804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_55
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 450
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c03026130491ffe44bcf4bb7a9e9baa3
+      internalID: 1274347042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_56
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 348
+        width: 20
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d14b51c19f42caa458926a3723c58351
+      internalID: 87288691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_57
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 66
+        width: 249
+        height: 380
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d5c46c0805f25408bb94e0b1ff1578
+      internalID: -479942221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_58
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 216
+        width: 29
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e6d663e4ef580409175d719bd59946
+      internalID: -857036808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_59
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 193
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 447a210c24fdd0f4384de9bdb6ae8097
+      internalID: 1832175346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_60
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 178
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 764db3a42385f7e43be7bed5c50dcf45
+      internalID: 761146450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_61
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 42
+        width: 47
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f61896f5b0b8e4ebe1f0895aa92c4b
+      internalID: 135829775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_62
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 36
+        width: 84
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8945a781206af6842ae988232b0faa99
+      internalID: 681550114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_63
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 68
+        width: 35
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba207e66f34d7345944b0b7954efd18
+      internalID: 494307782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_64
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 67
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef81d65458b044740954dacbdd012810
+      internalID: -357287562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_65
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 41
+        width: 105
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69ef592a87d72e94ca7fe84faa750c95
+      internalID: -58472272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_66
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 61
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3009b8a068393704fa35c03e247caafa
+      internalID: 344688088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_67
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 37
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e81080cb0edfbec45bdc2d0bb0deb5bd
+      internalID: -462728476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_68
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 55
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06dea26279818d84c9c9c811a1dfbcd9
+      internalID: 1362803121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_69
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 40
+        width: 43
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f016af69bed8bb04ba350965201799aa
+      internalID: 551659845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_70
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 41
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 964ec718f01ae3f4e8262d335a2a6d39
+      internalID: 1011918409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_71
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 49
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e797338be5ba7bd42896b8ee0c6e4e8f
+      internalID: 1880795474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_72
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 49
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c54acb2f5e91e440b5364f3a3a5d0c8
+      internalID: 1314774919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_73
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 43
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11c99500421b91a46bafc13eecc6278d
+      internalID: -1117518407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_74
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 42
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e4bb0d67e265544d985cdb840b430e9
+      internalID: 936775522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_75
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 38
+        width: 34
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de41dbf401fe5e2429e7eb0ed7df16c8
+      internalID: 2101720342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v0.1 Panda Character_76
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 38
+        width: 28
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae2c7ee93ab9e84db401457248868c5
+      internalID: -844245411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      v0.1 Panda Character_0: 881956446
+      v0.1 Panda Character_1: -2074764446
+      v0.1 Panda Character_10: 1218546055
+      v0.1 Panda Character_11: -509216967
+      v0.1 Panda Character_12: -558317997
+      v0.1 Panda Character_13: -67465239
+      v0.1 Panda Character_14: -678166427
+      v0.1 Panda Character_15: -941148361
+      v0.1 Panda Character_16: -1966941024
+      v0.1 Panda Character_17: 1606294225
+      v0.1 Panda Character_18: -1734701356
+      v0.1 Panda Character_19: 1704107445
+      v0.1 Panda Character_2: -1532293938
+      v0.1 Panda Character_20: 1188019695
+      v0.1 Panda Character_21: -1486411711
+      v0.1 Panda Character_22: 945951811
+      v0.1 Panda Character_23: -2058319231
+      v0.1 Panda Character_24: 1771331274
+      v0.1 Panda Character_25: -519471727
+      v0.1 Panda Character_26: 318014923
+      v0.1 Panda Character_27: -1045329132
+      v0.1 Panda Character_28: -1821455952
+      v0.1 Panda Character_29: -764278457
+      v0.1 Panda Character_3: -1284850081
+      v0.1 Panda Character_30: -475036742
+      v0.1 Panda Character_31: -868281351
+      v0.1 Panda Character_32: 1948252473
+      v0.1 Panda Character_33: 1088522620
+      v0.1 Panda Character_34: -1916305906
+      v0.1 Panda Character_35: -16883676
+      v0.1 Panda Character_36: -686671943
+      v0.1 Panda Character_37: -180841426
+      v0.1 Panda Character_38: -879913234
+      v0.1 Panda Character_39: 591394196
+      v0.1 Panda Character_4: 1829290215
+      v0.1 Panda Character_40: 779233137
+      v0.1 Panda Character_41: 1246855459
+      v0.1 Panda Character_42: -552077346
+      v0.1 Panda Character_43: 661758773
+      v0.1 Panda Character_44: -153923653
+      v0.1 Panda Character_45: -1795896520
+      v0.1 Panda Character_46: 1200771812
+      v0.1 Panda Character_47: -1319507010
+      v0.1 Panda Character_48: 884947844
+      v0.1 Panda Character_49: -864427266
+      v0.1 Panda Character_5: -545457429
+      v0.1 Panda Character_50: 565871596
+      v0.1 Panda Character_51: 473756313
+      v0.1 Panda Character_52: -2083556328
+      v0.1 Panda Character_53: 559223368
+      v0.1 Panda Character_54: -992752804
+      v0.1 Panda Character_55: 1274347042
+      v0.1 Panda Character_56: 87288691
+      v0.1 Panda Character_57: -479942221
+      v0.1 Panda Character_58: -857036808
+      v0.1 Panda Character_59: 1832175346
+      v0.1 Panda Character_6: -1272787010
+      v0.1 Panda Character_60: 761146450
+      v0.1 Panda Character_61: 135829775
+      v0.1 Panda Character_62: 681550114
+      v0.1 Panda Character_63: 494307782
+      v0.1 Panda Character_64: -357287562
+      v0.1 Panda Character_65: -58472272
+      v0.1 Panda Character_66: 344688088
+      v0.1 Panda Character_67: -462728476
+      v0.1 Panda Character_68: 1362803121
+      v0.1 Panda Character_69: 551659845
+      v0.1 Panda Character_7: -2112287355
+      v0.1 Panda Character_70: 1011918409
+      v0.1 Panda Character_71: 1880795474
+      v0.1 Panda Character_72: 1314774919
+      v0.1 Panda Character_73: -1117518407
+      v0.1 Panda Character_74: 936775522
+      v0.1 Panda Character_75: 2101720342
+      v0.1 Panda Character_76: -844245411
+      v0.1 Panda Character_8: -1534180833
+      v0.1 Panda Character_9: -164236265
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

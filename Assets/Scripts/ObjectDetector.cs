@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ObjectDetector : MonoBehaviour
@@ -11,6 +9,7 @@ public class ObjectDetector : MonoBehaviour
     private Ray         ray;
     private RaycastHit  hit;
 
+    //UIPopup
     public Panel_Inventory panel_Inventory;
     private void Awake()
     {
@@ -34,7 +33,8 @@ public class ObjectDetector : MonoBehaviour
                 if (hit.transform.CompareTag("Building"))
                 {
                     Debug.Log("Inventory Open");
-                    panel_Inventory.Show();
+
+                    UIPanel.Instance.Show("Panel_Inventory");
                 }
             }
         }
