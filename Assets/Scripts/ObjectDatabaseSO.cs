@@ -6,6 +6,7 @@ using UnityEngine;
 [CreateAssetMenu]
 public class ObjectsDatabaseSO : ScriptableObject
 {
+    // 건물 관련 데이터 리스트
     public List<ObjectData> objectsData;
 }
 

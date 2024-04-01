@@ -6,6 +6,10 @@ using UnityEngine;
 public class PlacementSystem : MonoBehaviour
 {
     [SerializeField]
+    private GameObject Camera;
+    private Vector3 ScreenCenter;
+
+    [SerializeField]
     private GameObject mouseIndicator; //, cellIndicator;
     [SerializeField]
     private InputManager inputManager;
@@ -43,9 +47,10 @@ public class PlacementSystem : MonoBehaviour
         // previewRenderer = cellIndicator.GetComponent<SpriteRenderer>();
     }
 
+    // 인벤 클릭 이벤트
     public void StartPlacement(int ID)
     {
-        StopPlacement();
+        // StopPlacement();
         selectedObjectIndex = database.objectsData.FindIndex(data => data.ID == ID);
         if(selectedObjectIndex < 0)
         {
@@ -55,35 +60,59 @@ public class PlacementSystem : MonoBehaviour
         // gridVisualization.SetActive(true); // 일단 안만듦
 
         // cellIndicator.SetActive(true); // 삭제
+
+        // 프리뷰 보여주기
+        /*
         preview.StartShowingPlacementPreview(
             database.objectsData[selectedObjectIndex].Prefab,
             database.objectsData[selectedObjectIndex].Size);
+        */
 
+        // 설치하려고 클릭
         inputManager.OnClicked += PlaceStructure;
+        // 설치 나가기
         inputManager.OnExit += StopPlacement;
     }
 
+    // 설치 진행
+    // 화면 상 가운데 설치됨
     private void PlaceStructure()
     {
+        /*
         if (inputManager.IsPointerOverUI())
         {
             return;
         }
-        Vector3 mousePosition = inputManager.GetSelectedMapPosition();
-        Vector3Int gridPosition = grid.WorldToCell(mousePosition);
+        */
+        // --- 추가 ---
+        // 화면 중앙 좌표 가져오기
+        ScreenCenter = new Vector3(Camera.transform.position.x, Camera.transform.position.y);
+        Debug.Log(ScreenCenter);
+        // 그리드 셀 좌표로 가져오기
+        Vector3Int gridPosition = grid.WorldToCell(ScreenCenter);
 
+        //Vector3 mousePosition = inputManager.GetSelectedMapPosition();
+        // 마우스 위치를 그리드 셀 좌표로 가져오기
+        //Vector3Int gridPosition = grid.WorldToCell(mousePosition);
+
+        // 설치 가능 여부 확인
         bool placementValidity = CheckPlacementValidity(gridPosition, selectedObjectIndex);
         if(placementValidity == false)
             return;
         
         // 설치 사운드 넣으려면 여기에 .Play()
 
+        // 설치
         GameObject newObject = Instantiate(database.objectsData[selectedObjectIndex].Prefab);
-        newObject.transform.position = grid.CellToWorld(gridPosition);
+        newObject.transform.position = grid.CellToWorld(gridPosition); 
         placedGameObjects.Add(newObject);
+
+        // 바닥/건물 구조물 구분
         GridData selectedData = database.objectsData[selectedObjectIndex].ID == 0 ?
            floorData :
            furnitureData;
+
+        // 설치정보 저장
         selectedData.AddObjectAt(gridPosition,
             database.objectsData[selectedObjectIndex].Size,
             database.objectsData[selectedObjectIndex].ID,
@@ -93,6 +122,7 @@ public class PlacementSystem : MonoBehaviour
         preview.UpdatePosition(grid.CellToWorld(gridPosition), false);
     }
 
+    // 배치 가능 여부
     private bool CheckPlacementValidity(Vector3Int gridPosition, int selectedObjectIndex)
     {
         // ID가 0 => 바닥

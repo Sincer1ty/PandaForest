@@ -7,6 +7,7 @@ public class GridData
 {
     Dictionary<Vector3Int, PlacementData> placedObjects = new();
 
+    // 설치
     public void AddObjectAt(Vector3Int gridPosition,
                             Vector2Int objectSize,
                             int ID,
@@ -22,7 +23,7 @@ public class GridData
         }
     }
 
-    // 아이소매트릭뷰에 알맞게 계산 수정 필요
+    // 그리드 셀 위치 계산
     private List<Vector3Int> CalculatePositions(Vector3Int gridPosition, Vector2Int objectSize)
     {
         List<Vector3Int> returnVal = new();
@@ -38,6 +39,7 @@ public class GridData
         return returnVal;
     }
 
+    // 셀에 설치 할 수 있는가?
     public bool CanPlaceObejctAt(Vector3Int gridPosition, Vector2Int objectSize)
     {
         List<Vector3Int> positionToOccupy = CalculatePositions(gridPosition, objectSize);

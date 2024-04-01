@@ -16,6 +16,8 @@ public class Drag : MonoBehaviour
 
     Transform OriginTransform;
 
+
+
     [SerializeField]
     static private bool isOnPlacementButton = false;  // 편집 버튼 눌렀는지 체크
         
