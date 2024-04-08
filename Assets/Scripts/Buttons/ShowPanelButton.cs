@@ -5,6 +5,7 @@ public class ShowPanelButton : MonoBehaviour
 
     public void DoShowPanel()
     {
+        Debug.Log("DoShowPanel");
         UIPanel.Instance.Show(PanelId);
     }
 }
