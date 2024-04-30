@@ -10,6 +10,13 @@ public class DragSystem : MonoBehaviour
     private Grid grid;
     private Placement placement;
     Vector3Int gridPosition;
+    Vector3Int gridPos;
+
+    private GridData griddata;
+
+    int selectedObjectIndex;
+
+    IBuildingState buildingState;
 
     private void Start()
     {
@@ -37,6 +44,8 @@ public class DragSystem : MonoBehaviour
         // 그리드 셀 좌표로 가져오기
         gridPosition = grid.WorldToCell(objPosition);
         transform.position = grid.GetCellCenterWorld(gridPosition);
+        //transform.position = gridPosition;
+
 
     }
 
@@ -45,19 +54,24 @@ public class DragSystem : MonoBehaviour
     {
         // 편집모드인가?
 
-        // 태그로 ID를 구분하기..?
-        // placement.StartPlacement();
+        Vector3 objPosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10);
+        // 그리드 셀 좌표로 가져오기
+        gridPosition = grid.WorldToCell(objPosition);
+        
+        if (gameObject.tag == "Id_1")
+        {
+            selectedObjectIndex = 1;
+            
+        }
 
-        // [ 설치 ]
-        // 이미 설치되어 있으면 원래 위치로 돌아감
-        // 설치 가능하면 
-        // -> 1) 건물이 건설되어 있음으로 설정
-        // -> 2) 원래 위치에 아무것도 건설되어 있지 않게 되었으니..
-        // ->    타일 원래 위치를 건설될 수 있게 비워두기
+        // 건물을 이동시키는 MoveObject 메서드 호출 (이전위치, 새로운위치, 사이즈)
+        // griddata.MoveObject(gridPos, gridPosition, selectedObjectIndex);
 
+       
+        placement.StartPlacement(1, gridPosition, false);
 
+        // buildingState.OnAction(gridPosition);
 
-        // Placement의 StartPlacement(int ID, Vector3Int gridPosition)
 
         // Vector3 mousePosition = inputManager.GetSelectedMapPosition();
         // 마우스 위치를 그리드 셀 좌표로 가져오기

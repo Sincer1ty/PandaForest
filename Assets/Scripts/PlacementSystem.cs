@@ -113,11 +113,12 @@ public class PlacementSystem : MonoBehaviour
            furnitureData;
 
         // 설치정보 저장
+        /*
         selectedData.AddObjectAt(gridPosition,
             database.objectsData[selectedObjectIndex].Size,
             database.objectsData[selectedObjectIndex].ID,
             placedGameObjects.Count - 1);
-
+        */
         // 이 위치는 이미 배치되어있음
         preview.UpdatePosition(grid.CellToWorld(gridPosition), false);
     }

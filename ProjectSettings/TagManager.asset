@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Tile
   - Building
+  - Id_0
+  - Id_1
   layers:
   - Default
   - TransparentFX
