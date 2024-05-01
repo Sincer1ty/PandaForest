@@ -27,6 +27,8 @@ public class UIPanel : MonoBehaviour
         }
     }
 
+    public GameObject BtnSetting;
+
     public List<PanelModel> Panels;
 
     private Queue<PanelInstanceModel> queue = new Queue<PanelInstanceModel>();
@@ -54,6 +56,9 @@ public class UIPanel : MonoBehaviour
         }
         
         Time.timeScale = 0;
+        //Setting Panel 이 아니면
+        if(panelId != "Panel_Setting")
+            BtnSetting.SetActive(false);
     }
 
     public void Close()
@@ -67,6 +72,9 @@ public class UIPanel : MonoBehaviour
 
         //패널 배경 재시동
         Time.timeScale = 1f;
+        //배경 UI 버튼 visible
+        if(!BtnSetting.activeSelf)
+            BtnSetting.SetActive(true);
     }
 
     public bool AnyPanelShowing()
