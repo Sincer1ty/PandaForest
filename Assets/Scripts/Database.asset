@@ -9,19 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23b9d3af4b9a03b4c86822ce9752606c, type: 3}
+  m_Script: {fileID: 11500000, guid: a14cb1caa3113364ba8e7b93447583de, type: 3}
   m_Name: Database
   m_EditorClassIdentifier: 
   objectsData:
-  - <Name>k__BackingField: Floor
+  - <Name>k__BackingField: Structure0
     <ID>k__BackingField: 0
     <Size>k__BackingField: {x: 1, y: 1}
-    <Prefab>k__BackingField: {fileID: 6909090490432417876, guid: 3ee528eb4a7bff640a57cd934016f40d, type: 3}
-  - <Name>k__BackingField: Field
-    <ID>k__BackingField: 1
-    <Size>k__BackingField: {x: 1, y: 1}
     <Prefab>k__BackingField: {fileID: 4579622684914581997, guid: d135cc02ccae8384799bd0262c5a0e14, type: 3}
-  - <Name>k__BackingField: Field3
-    <ID>k__BackingField: 2
+  - <Name>k__BackingField: Structure1
+    <ID>k__BackingField: 1
     <Size>k__BackingField: {x: 3, y: 3}
     <Prefab>k__BackingField: {fileID: 874179697247426934, guid: f256b8f1bb2e0ed48874d24a4ab46937, type: 3}
