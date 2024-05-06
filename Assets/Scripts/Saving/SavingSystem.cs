@@ -1,7 +1,8 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
 using Newtonsoft.Json.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -26,7 +27,13 @@ public class SavingSystem : MonoBehaviour
     public void Save(string saveFile)
     {
         //..
-        print("Saving to " + saveFile);
+        string path = GetPathFromSaveFile(saveFile);
+        print("Saving to " + path);
+        using (FileStream stream = File.Open(path, FileMode.Create))
+        {
+            byte[] bytes = Encoding.UTF8.GetBytes("À¡la Seoul!");
+            stream.Write(bytes, 0, bytes.Length);
+        }
 
         //JObject state = LoadJsonFromFile(saveFile);
         //CaptureAsToken(state);
@@ -46,7 +53,14 @@ public class SavingSystem : MonoBehaviour
     public void Load(string saveFile)
     {
         //..
-        print("Loading from " + saveFile);
+        string path = GetPathFromSaveFile(saveFile);
+        print("Loading from " + path);
+        using (FileStream stream = File.Open(path, FileMode.Open))
+        {
+            byte[] buffer = new byte[stream.Length];
+            stream.Read(buffer, 0, buffer.Length);
+            print(Encoding.UTF8.GetString(buffer));
+        }
 
         //RestoreFromToken(LoadJsonFromFile(saveFile));
     }
