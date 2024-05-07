@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using Newtonsoft.Json.Linq;
 using UnityEngine;
@@ -31,8 +32,8 @@ public class SavingSystem : MonoBehaviour
         print("Saving to " + path);
         using (FileStream stream = File.Open(path, FileMode.Create))
         {
-            byte[] bytes = Encoding.UTF8.GetBytes("À¡la Seoul!");
-            stream.Write(bytes, 0, bytes.Length);
+            BinaryFormatter formatter = new BinaryFormatter();
+            //formatter.Serialize(stream, CaptureState());
         }
 
         //JObject state = LoadJsonFromFile(saveFile);
@@ -40,6 +41,7 @@ public class SavingSystem : MonoBehaviour
         //SaveFileAsJSon(saveFile, state);
     }
 
+    
     private void SaveFileAsJSon(string saveFile, JObject state)
     {
         throw new NotImplementedException();
@@ -57,9 +59,8 @@ public class SavingSystem : MonoBehaviour
         print("Loading from " + path);
         using (FileStream stream = File.Open(path, FileMode.Open))
         {
-            byte[] buffer = new byte[stream.Length];
-            stream.Read(buffer, 0, buffer.Length);
-            print(Encoding.UTF8.GetString(buffer));
+            BinaryFormatter formatter = new BinaryFormatter();
+            //RestoreState(formatter.Deserialize(stream));
         }
 
         //RestoreFromToken(LoadJsonFromFile(saveFile));
