@@ -9,6 +9,8 @@ public class EditUIManager : MonoBehaviour
 
     public bool isEditUIDown;
 
+    public GameObject FloatingUI;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,5 +38,19 @@ public class EditUIManager : MonoBehaviour
             isEditUIDown = false;
         }
         
+    }
+
+    public void Floating_Cancel()
+    {
+        FloatingUI.SetActive(false);
+
+        // 원래 위치로 돌아가야 함
+    }
+
+    public void Floating_Ok()
+    {
+        FloatingUI.SetActive(false);
+
+        // 그리드 데이터 저장
     }
 }

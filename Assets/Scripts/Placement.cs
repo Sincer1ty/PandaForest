@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 // 건물 배치 및 제거
 public class Placement : MonoBehaviour
@@ -11,6 +12,9 @@ public class Placement : MonoBehaviour
 
     [SerializeField]
     private Grid grid;
+
+    [SerializeField]
+    private Tilemap tilemap;
 
     [SerializeField]
     private ObjectsDatabaseSO database;
@@ -71,14 +75,14 @@ public class Placement : MonoBehaviour
         // 화면 중앙 좌표 가져오기
         ScreenCenter = new Vector3(Camera.transform.position.x, Camera.transform.position.y);
         Debug.Log(ScreenCenter);
-        // 그리드 셀 좌표로 가져오기
-        Vector3Int gridPosition = grid.WorldToCell(ScreenCenter);
 
-        //Vector3 mousePosition = inputManager.GetSelectedMapPosition();
-        //Vector3Int gridPosition = grid.WorldToCell(mousePosition);
+        // 타일맵 셀 좌표로 가져오기
+        Vector3Int centerPosition = tilemap.WorldToCell(ScreenCenter);
+        print(centerPosition);
+
 
         // 설치 가능 유무 확인
-        bool placementValidity = CheckPlacementValidity(gridPosition, selectedObjectIndex);
+        bool placementValidity = CheckPlacementValidity(centerPosition, selectedObjectIndex);
         if (placementValidity == false)
         {
             // source.PlayOneShot(wrongPlacementClip);
@@ -91,13 +95,13 @@ public class Placement : MonoBehaviour
 
         // 중앙에 설치(생성)
         GameObject newObject = Instantiate(database.objectsData[selectedObjectIndex].Prefab);
-        newObject.transform.position = grid.CellToWorld(gridPosition);
+        newObject.transform.position = tilemap.CellToWorld(centerPosition);
         placedGameObjects.Add(newObject);
 
         // 원래 여기서 바닥,건물 구분했었음
         GridData selectedData = StructureData;
         // 설치 데이터 전달 
-        selectedData.AddObjectAt(gridPosition,
+        selectedData.AddObjectAt(centerPosition,
             database.objectsData[selectedObjectIndex].Size,
             database.objectsData[selectedObjectIndex].ID,
             placedGameObjects.Count - 1);
