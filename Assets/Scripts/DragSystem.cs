@@ -55,32 +55,24 @@ public class DragSystem : MonoBehaviour
     {
         // 구조물이 마우스 따라다니도록
 
-        // 그리드 기준
-        //Vector3 mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, distance));
-        //gridPosition = grid.WorldToCell(mousePosition); // 그리드셀 좌표로 변환
-        //transform.position = grid.GetCellCenterWorld(gridPosition);
-
         // 타일맵 기준
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, distance));
         Vector3Int cellPosition = tilemap.WorldToCell(mousePosition);
         transform.position = tilemap.GetCellCenterWorld(cellPosition);
 
+        // 월드 좌표를 스크린 좌표로 변환
+        var screenPos = Camera.main.WorldToScreenPoint(transform.position);
+        
+        // 스크린 좌표를 canvas내에서의 좌표로 변환
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(rt, screenPos, null, out localPos);
+        rectFloating.localPosition = localPos;
 
-        // 마우스 좌표를 canvas내에서의 좌표로 변환
-        // RectTransformUtility.ScreenPointToLocalPointInRectangle(rt, mousePos, canvas2.worldCamera, out localPosition);
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(rt, Input.mousePosition, null, out localPos);
-
-        rectFloating.anchoredPosition = localPos;
     }
 
     // 드래그 놓았을 때 실행 (터치 가능)
     void OnMouseUp()
     {
-        // Vector3 objPosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10);
-        // gridPosition = grid.WorldToCell(objPosition); // 그리드셀 좌표로 변환
-
-        print(transform.position);
-
+        print("건물 위치 : "+ transform.position);
     }
 
 }

@@ -27,10 +27,11 @@ public class Placement : MonoBehaviour
 
     private List<GameObject> placedGameObjects = new();
 
-    bool isFirstBuild;
-
     // 설치 가능여부 색깔로 표시
     private SpriteRenderer previewRenderer;
+
+    [SerializeField]
+    private EditUIManager UiManager;
 
     public void Start()
     {
@@ -38,7 +39,6 @@ public class Placement : MonoBehaviour
         // floorData = new();
         // furnitureData = new();
         StructureData = new();
-
         // previewRenderer = cellIndicator.GetComponent<SpriteRenderer>();
     }
 
@@ -105,6 +105,9 @@ public class Placement : MonoBehaviour
             database.objectsData[selectedObjectIndex].Size,
             database.objectsData[selectedObjectIndex].ID,
             placedGameObjects.Count - 1);
+
+        // 편집 UI 내리기 
+        UiManager.EditUIDown();
 
         // preview.UpdatePosition(grid.CellToWorld(gridPosition), false);
     }
