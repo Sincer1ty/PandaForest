@@ -13,14 +13,21 @@ public class DragSystem : MonoBehaviour
     private GameObject floatingUI;
     GameObject canvas2;
     public RectTransform rt;
+    EditUIManager editUIManager;
 
-    Vector3Int gridPosition;
+    GameObject currentObj;
+
+    // Vector3 originPosition;
+    public static Vector3 originPosition = new Vector3(0, 0, 0);
+
+    public static string originTag;
 
     Vector2 mousePos; // 마우스 좌표
     Vector2 localPos; // 변환된 canvas내 좌표
     private RectTransform rectFloating;
 
     // private Placement PlacementSystem;
+
 
     private void Start()
     {
@@ -40,14 +47,51 @@ public class DragSystem : MonoBehaviour
         rt = canvas2.transform as RectTransform;
 
         rectFloating = floatingUI.gameObject.GetComponent<RectTransform>();
+
+        // EditUIManager 스크립트 
+        GameObject edituimanager = GameObject.Find("EditUIManager");
+        editUIManager = edituimanager.GetComponent<EditUIManager>();
+    }
+
+
+    private void Update()
+    {
+        // 취소 클릭 시 : 원래 위치로 돌아감 
+        if (editUIManager.isFloatCancel) 
+        {
+            // 현재 이동중인 오브젝트 태그로 구분 
+            currentObj = GameObject.FindWithTag("Building");
+            print("이전 위치는 " + originPosition);
+            currentObj.transform.position = originPosition;
+
+            currentObj.tag = originTag; // 원래 태그로 돌려놓기 
+            editUIManager.isFloatCancel = false;
+        }
+
+        // 완료 클릭 시 : ID 넘겨주기
+        if (editUIManager.isFloatOK)
+        {
+            currentObj.tag = originTag; // 원래 태그로 돌려놓기 
+            editUIManager.GetInfo(currentObj.transform.position, currentObj.tag); // 정보 넘겨주기 
+
+            editUIManager.isFloatOK = false;
+        }
     }
 
     // 마우스 또는 터치 했을 때 
     void OnMouseDown()
     {
-        print("기존 위치 "+ transform.position);
-
+        originTag = gameObject.tag;
+        gameObject.tag = "Building";
         floatingUI.SetActive(true);
+
+        currentObj = GameObject.FindWithTag("Building");
+
+        originPosition = currentObj.transform.position;
+
+        // editUIManager.oriPosition = originPosition;
+        print("기존 위치 : "+ originPosition);
+
     }
 
     // 마우스 드래그 (터치 가능)
@@ -73,6 +117,6 @@ public class DragSystem : MonoBehaviour
     void OnMouseUp()
     {
         print("건물 위치 : "+ transform.position);
+        // gameObject.tag = "Untagged";
     }
-
 }

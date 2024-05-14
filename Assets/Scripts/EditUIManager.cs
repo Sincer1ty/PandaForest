@@ -11,23 +11,44 @@ public class EditUIManager : MonoBehaviour
 
     public GameObject FloatingUI;
 
-    // Start is called before the first frame update
-    void Start()
+    public int index = -1;
+
+    public bool isFloatCancel = false;
+    public bool isFloatOK = false;
+
+    public string ObjectTag;
+
+    [SerializeField]
+    private Placement placement;
+
+    private void Start()
     {
         PanelAnim = EditUI.GetComponent<Animator>();
-        
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Floating_Cancel() // 취소 클릭 
     {
-        
+        // 원래 위치로 돌아가기 
+
+        FloatingUI.SetActive(false);
+        isFloatCancel = true;
     }
+
+    public void Floating_Ok() // 완료 클릭
+    {
+        // 설치 가능한지 확인 후 
+        // 설치 가능 : 설치하기 
+        // 설치 불가능 : 원래 자리로 돌려놓기 
+
+        FloatingUI.SetActive(false);
+        isFloatOK = true;
+    }
+
 
     public void EditUIDown()
     {
         // 편집UI Down
-        if(!isEditUIDown)
+        if (!isEditUIDown)
         {
             PanelAnim.SetBool("isDown", true);
             isEditUIDown = true;
@@ -37,20 +58,23 @@ public class EditUIManager : MonoBehaviour
             PanelAnim.SetBool("isDown", false);
             isEditUIDown = false;
         }
-        
+
     }
 
-    public void Floating_Cancel()
+    // 태그 -> ID 
+    public void GetInfo(Vector3 position , string TagId)
     {
-        FloatingUI.SetActive(false);
+        int ObjectId = -1;
 
-        // 원래 위치로 돌아가야 함
-    }
+        if(TagId == "ID_0")
+        {
+            ObjectId = 0;
+        }
+        else if (TagId == "ID_1")
+        {
+            ObjectId = 1;
+        }
 
-    public void Floating_Ok()
-    {
-        FloatingUI.SetActive(false);
-
-        // 그리드 데이터 저장
+        placement.EditStructure(position, ObjectId);
     }
 }

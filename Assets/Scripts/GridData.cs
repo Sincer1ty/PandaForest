@@ -12,11 +12,11 @@ public class GridData : MonoBehaviour
     // 그리드 위치에 오브젝트 추가
     public void AddObjectAt(Vector3Int gridPosition,
                             Vector2Int objectSize,
-                            int ID,
-                            int placedObjectIndex)
+                            int ID /*,
+                            int placedObjectIndex*/)
     {
         List<Vector3Int> positionToOccupy = CalculatePositions(gridPosition, objectSize); // 차지하는 위치 계산해서 리스트에 넣어두기
-        PlacementData data = new PlacementData(positionToOccupy, ID, placedObjectIndex);
+        PlacementData data = new PlacementData(positionToOccupy, ID /*, placedObjectIndex*/);
         foreach (var pos in positionToOccupy) // 차지하는 모든 위치의 데이터
         {
             if (placedObjects.ContainsKey(pos)) // 이미 차지하는 위치인가?
@@ -80,12 +80,12 @@ public class PlacementData
 {
     public List<Vector3Int> occupiedPositions;
     public int ID { get; private set; } // 
-    public int PlacedObjectIndex { get; private set; } // 제거 시스템 만들 때 유용
+    // public int PlacedObjectIndex { get; private set; } // 제거 시스템 만들 때 유용
 
-    public PlacementData(List<Vector3Int> occupiedPositions, int iD, int placedObjectIndex)
+    public PlacementData(List<Vector3Int> occupiedPositions, int iD /*, int placedObjectIndex*/)
     {
         this.occupiedPositions = occupiedPositions;
         ID = iD;
-        PlacedObjectIndex = placedObjectIndex;
+        // PlacedObjectIndex = placedObjectIndex;
     }
 }
