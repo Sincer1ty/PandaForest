@@ -61,7 +61,7 @@ public class DragSystem : MonoBehaviour
         {
             // 현재 이동중인 오브젝트 태그로 구분 
             currentObj = GameObject.FindWithTag("Building");
-            print("이전 위치는 " + originPosition);
+            print("이전 위치로 돌아갑니다.  " + originPosition);
             currentObj.transform.position = originPosition;
 
             currentObj.tag = originTag; // 원래 태그로 돌려놓기 
@@ -71,7 +71,12 @@ public class DragSystem : MonoBehaviour
         // 완료 클릭 시 : ID 넘겨주기
         if (editUIManager.isFloatOK)
         {
+            // 현재 이동중인 오브젝트 태그로 구분 
+            currentObj = GameObject.FindWithTag("Building");
+            
             currentObj.tag = originTag; // 원래 태그로 돌려놓기 
+
+
             editUIManager.GetInfo(currentObj.transform.position, currentObj.tag); // 정보 넘겨주기 
 
             editUIManager.isFloatOK = false;
@@ -89,7 +94,6 @@ public class DragSystem : MonoBehaviour
 
         originPosition = currentObj.transform.position;
 
-        // editUIManager.oriPosition = originPosition;
         print("기존 위치 : "+ originPosition);
 
     }
@@ -117,6 +121,5 @@ public class DragSystem : MonoBehaviour
     void OnMouseUp()
     {
         print("건물 위치 : "+ transform.position);
-        // gameObject.tag = "Untagged";
     }
 }
