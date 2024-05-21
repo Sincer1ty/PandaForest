@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Tilemaps;
 
+// 건물 프리팹에 들어가는 스크립트 
 public class DragSystem : MonoBehaviour
 {
     float distance = 10;
@@ -17,40 +18,32 @@ public class DragSystem : MonoBehaviour
 
     GameObject currentObj;
 
-    // Vector3 originPosition;
     public static Vector3 originPosition = new Vector3(0, 0, 0);
-
     public static string originTag;
 
-    Vector2 mousePos; // 마우스 좌표
     Vector2 localPos; // 변환된 canvas내 좌표
     private RectTransform rectFloating;
-
-    // private Placement PlacementSystem;
 
 
     private void Start()
     {
         // 그리드 컴포넌트 
-        GameObject gridobject = GameObject.Find("Grid");
-        grid = gridobject.GetComponent<Grid>();
+        grid = GameObject.Find("Grid").GetComponent<Grid>();
 
         // 타일맵 컴포넌트 
-        GameObject tileobject = gridobject.transform.GetChild(0).gameObject;
-        tilemap = tileobject.GetComponent<Tilemap>();
-
+        tilemap = grid.transform.GetChild(0).GetComponent<Tilemap>();
+        
         // 플로팅 UI 
         canvas2 = GameObject.Find("Canvas2");
         floatingUI = canvas2.transform.GetChild(0).gameObject;
 
         // 캔버스 좌표 
         rt = canvas2.transform as RectTransform;
-
         rectFloating = floatingUI.gameObject.GetComponent<RectTransform>();
 
         // EditUIManager 스크립트 
-        GameObject edituimanager = GameObject.Find("EditUIManager");
-        editUIManager = edituimanager.GetComponent<EditUIManager>();
+        editUIManager = GameObject.Find("EditUIManager").GetComponent<EditUIManager>();
+        
     }
 
 
@@ -76,10 +69,12 @@ public class DragSystem : MonoBehaviour
             
             currentObj.tag = originTag; // 원래 태그로 돌려놓기 
 
-
             editUIManager.GetInfo(currentObj.transform.position, currentObj.tag); // 정보 넘겨주기 
 
             editUIManager.isFloatOK = false;
+
+            // 설치 불가능 할 경우 원래 자리로 돌아가야함
+
         }
     }
 
@@ -91,7 +86,6 @@ public class DragSystem : MonoBehaviour
         floatingUI.SetActive(true);
 
         currentObj = GameObject.FindWithTag("Building");
-
         originPosition = currentObj.transform.position;
 
         print("기존 위치 : "+ originPosition);

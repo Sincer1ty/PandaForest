@@ -5,7 +5,7 @@ using UnityEngine;
 public class EditUIManager : MonoBehaviour
 {
     public GameObject EditUI;
-    Animator PanelAnim;
+    private Animator PanelAnim;
 
     public bool isEditUIDown;
 
@@ -21,9 +21,24 @@ public class EditUIManager : MonoBehaviour
     [SerializeField]
     private Placement placement;
 
+    private Dictionary<string, int> tagToIdMap;
+
     private void Start()
     {
         PanelAnim = EditUI.GetComponent<Animator>();
+        InitializeTagToIdMap();
+    }
+
+    // 태그 <-> ID  매핑 : 딕셔너리로 관리 
+    private void InitializeTagToIdMap()
+    {
+        tagToIdMap = new Dictionary<string, int>
+        {
+            { "ID_0", 0 },
+            { "ID_1", 1 }
+
+            // 필요한 다른 태그와 ID 추가
+        };
     }
 
     public void Floating_Cancel() // 취소 클릭 
@@ -44,37 +59,25 @@ public class EditUIManager : MonoBehaviour
         isFloatOK = true;
     }
 
-
+    // 편집UI Down/Up
     public void EditUIDown()
     {
-        // 편집UI Down
-        if (!isEditUIDown)
-        {
-            PanelAnim.SetBool("isDown", true);
-            isEditUIDown = true;
-        }
-        else // 편집UI Up
-        {
-            PanelAnim.SetBool("isDown", false);
-            isEditUIDown = false;
-        }
-
+        isEditUIDown = !isEditUIDown;
+        PanelAnim.SetBool("isDown", isEditUIDown);
+        
     }
 
     // 태그 -> ID 
     public void GetInfo(Vector3 position , string TagId)
     {
-        int ObjectId = -1;
-
-        if(TagId == "ID_0")
+        if (tagToIdMap.TryGetValue(TagId, out int ObjectId))
         {
-            ObjectId = 0;
+            placement.EditStructure(position, ObjectId);
         }
-        else if (TagId == "ID_1")
+        else
         {
-            ObjectId = 1;
+            Debug.LogError($"Invalid TagId: {TagId}");
         }
-
-        placement.EditStructure(position, ObjectId);
+       
     }
 }

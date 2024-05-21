@@ -22,7 +22,6 @@ public class Placement : MonoBehaviour
 
     private Vector3Int lastDetectedPosition = Vector3Int.zero; // 마지막으로 감지된 그리드 위치
 
-    // private GridData floorData, furnitureData;
     private GridData StructureData;
 
     private List<GameObject> placedGameObjects = new();
@@ -35,31 +34,9 @@ public class Placement : MonoBehaviour
 
     public void Start()
     {
-        // StopPlacement();
-        // floorData = new();
-        // furnitureData = new();
         StructureData = new();
-        // previewRenderer = cellIndicator.GetComponent<SpriteRenderer>();
+        
     }
-
-    /*
-    // 선택된 오브젝트에 대한 건물 배치 상태를 설정하고 입력 이벤트를 등록
-    public void StartPlacement(int ID)
-    {
-        // StopPlacement();
-
-        selectedObjectIndex = database.objectsData.FindIndex(data => data.ID == ID);
-        if (selectedObjectIndex < 0)
-        {
-            Debug.LogError($"No ID found {ID}");
-            return;
-        }
-        // gridVisualization.SetActive(true);
-        // cellIndicator.SetActive(true);
-        // inputManager.OnClicked += PlaceStructure;
-        // inputManager.OnExit += StopPlacement;
-    }
-    */
 
     // 버튼 클릭시 중앙에 생성 : ID 받아오기
     public void PlaceStructure(int ID)
@@ -103,13 +80,11 @@ public class Placement : MonoBehaviour
         // 설치 데이터 전달 
         selectedData.AddObjectAt(centerPosition,
             database.objectsData[selectedObjectIndex].Size,
-            database.objectsData[selectedObjectIndex].ID /*,
-            placedGameObjects.Count - 1*/);
+            database.objectsData[selectedObjectIndex].ID );
 
         // 편집 UI 내리기 
         UiManager.EditUIDown();
 
-        // preview.UpdatePosition(grid.CellToWorld(gridPosition), false);
     }
 
 
@@ -142,20 +117,7 @@ public class Placement : MonoBehaviour
         // 설치 데이터 전달 
         selectedData.AddObjectAt(EditPosition,
             database.objectsData[selectedObjectIndex].Size,
-            database.objectsData[selectedObjectIndex].ID /*,
-            placedGameObjects.Count - 1*/);
-
-    }
-
-    private void MoveStructure()
-    {
-        /* 
-        // UI 요소 위에 마우스 포인터가 있으면 메서드를 종료 ?
-        if (inputManager.IsPointerOverUI())
-        {
-            return;
-        }
-        */
+            database.objectsData[selectedObjectIndex].ID );
 
     }
 
@@ -170,26 +132,14 @@ public class Placement : MonoBehaviour
     private void StopPlacement()
     {
         selectedObjectIndex = -1;
-        // gridVisualization.SetActive(false);
-        // cellIndicator.SetActive(false);
-        // inputManager.OnClicked -= PlaceStructure;
-        // inputManager.OnExit -= StopPlacement;
+        
     }
 
     private void Update()
     {
         if (selectedObjectIndex < 0)
             return;
-        //Vector3 mousePosition = inputManager.GetSelectedMapPosition();
-        //Vector3Int gridPosition = grid.WorldToCell(mousePosition);
-
-        // 프리뷰 색 바꿔주는 부분
-        //bool placementValidity = CheckPlacementValidity(gridPosition, selectedObjectIndex);
-        //previewRenderer.material.color = placementValidity ? Color.white : Color.red;
-
-
-        // mouseIndicator.transform.position = mousePosition;
-        // cellIndicator.transform.position = grid.CellToWorld(gridPosition);
+       
     }
 
 }
