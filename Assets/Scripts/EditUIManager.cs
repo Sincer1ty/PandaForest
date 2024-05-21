@@ -68,16 +68,17 @@ public class EditUIManager : MonoBehaviour
     }
 
     // еб╠в -> ID 
-    public void GetInfo(Vector3 position , string TagId)
+    public bool GetInfo(Vector3 position , string TagId)
     {
         if (tagToIdMap.TryGetValue(TagId, out int ObjectId))
         {
-            placement.EditStructure(position, ObjectId);
+            return placement.EditStructure(position, ObjectId);
         }
         else
         {
             Debug.LogError($"Invalid TagId: {TagId}");
+            return false;
         }
-       
+
     }
 }

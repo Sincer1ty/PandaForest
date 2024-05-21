@@ -66,10 +66,18 @@ public class DragSystem : MonoBehaviour
         {
             // 현재 이동중인 오브젝트 태그로 구분 
             currentObj = GameObject.FindWithTag("Building");
-            
             currentObj.tag = originTag; // 원래 태그로 돌려놓기 
 
-            editUIManager.GetInfo(currentObj.transform.position, currentObj.tag); // 정보 넘겨주기 
+            // 설치 가능하면
+            // 이전의 originPosition의 정보를 삭제 해야함 
+
+            bool canPlace = editUIManager.GetInfo(currentObj.transform.position, currentObj.tag); // 정보 넘겨주기 
+
+            if (!canPlace)
+            {
+                print("설치할 수 없습니다. 원래 자리로 돌아갑니다.");
+                currentObj.transform.position = originPosition;
+            }
 
             editUIManager.isFloatOK = false;
 

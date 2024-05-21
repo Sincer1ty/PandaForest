@@ -89,14 +89,14 @@ public class Placement : MonoBehaviour
 
 
     // 편집 시, 위치정보 수정 
-    public void EditStructure(Vector3 Position, int ID)
+    public bool EditStructure(Vector3 Position, int ID)
     {
         // 존재 유무 확인 
         selectedObjectIndex = database.objectsData.FindIndex(data => data.ID == ID);
         if (selectedObjectIndex < 0)
         {
             Debug.LogError($"No ID found {ID}");
-            return;
+            return false;
         }
 
         // 타일맵 셀 좌표로 가져오기
@@ -107,18 +107,16 @@ public class Placement : MonoBehaviour
         bool placementValidity = CheckPlacementValidity(EditPosition, selectedObjectIndex);
         if (placementValidity == false)
         {
-            print("설치할 수 없습니다.");
-            return;
+            return false;
         }
-        print("설치가능 합니다.");
+        print("설치 가능합니다.");
 
-        // 원래 여기서 바닥,건물 구분했었음
-        GridData selectedData = StructureData;
         // 설치 데이터 전달 
-        selectedData.AddObjectAt(EditPosition,
+        StructureData.AddObjectAt(EditPosition,
             database.objectsData[selectedObjectIndex].Size,
             database.objectsData[selectedObjectIndex].ID );
 
+        return true;
     }
 
     private bool CheckPlacementValidity(Vector3Int gridPosition, int selectedObjectIndex)
