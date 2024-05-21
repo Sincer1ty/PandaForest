@@ -53,6 +53,19 @@ public class GridData : MonoBehaviour
         return true;
     }
 
+    // 건물 정보 삭제 
+    public void RemoveObjectAt(Vector3Int gridPosition, Vector2Int objectSize)
+    {
+        List<Vector3Int> positionToOccupy = CalculatePositions(gridPosition, objectSize);
+        foreach (var pos in positionToOccupy)
+        {
+            if (placedObjects.ContainsKey(pos))
+            {
+                placedObjects.Remove(pos);
+            }
+        }
+    }
+
     // 주어진 그리드 위치에 대한 표현 인덱스 반환
     // 해당 위치에 오브젝트 없으면 -1 반환
     /*

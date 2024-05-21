@@ -51,10 +51,6 @@ public class EditUIManager : MonoBehaviour
 
     public void Floating_Ok() // 완료 클릭
     {
-        // 설치 가능한지 확인 후 
-        // 설치 가능 : 설치하기 
-        // 설치 불가능 : 원래 자리로 돌려놓기 
-
         FloatingUI.SetActive(false);
         isFloatOK = true;
     }

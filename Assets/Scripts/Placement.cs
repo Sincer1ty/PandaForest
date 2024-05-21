@@ -111,6 +111,12 @@ public class Placement : MonoBehaviour
         }
         print("설치 가능합니다.");
 
+        // 새로운 위치로 이동했으니, 이전 설치 정보 삭제 
+        Vector3Int originGridPosition = tilemap.WorldToCell(DragSystem.originPosition);
+        Vector2Int objectSize = database.objectsData[selectedObjectIndex].Size;
+
+        StructureData.RemoveObjectAt(originGridPosition, objectSize);
+
         // 설치 데이터 전달 
         StructureData.AddObjectAt(EditPosition,
             database.objectsData[selectedObjectIndex].Size,

@@ -18,7 +18,7 @@ public class DragSystem : MonoBehaviour
 
     GameObject currentObj;
 
-    public static Vector3 originPosition = new Vector3(0, 0, 0);
+    public static Vector3 originPosition ;
     public static string originTag;
 
     Vector2 localPos; // 변환된 canvas내 좌표
@@ -68,8 +68,6 @@ public class DragSystem : MonoBehaviour
             currentObj = GameObject.FindWithTag("Building");
             currentObj.tag = originTag; // 원래 태그로 돌려놓기 
 
-            // 설치 가능하면
-            // 이전의 originPosition의 정보를 삭제 해야함 
 
             bool canPlace = editUIManager.GetInfo(currentObj.transform.position, currentObj.tag); // 정보 넘겨주기 
 
@@ -81,7 +79,6 @@ public class DragSystem : MonoBehaviour
 
             editUIManager.isFloatOK = false;
 
-            // 설치 불가능 할 경우 원래 자리로 돌아가야함
 
         }
     }
@@ -122,6 +119,6 @@ public class DragSystem : MonoBehaviour
     // 드래그 놓았을 때 실행 (터치 가능)
     void OnMouseUp()
     {
-        print("건물 위치 : "+ transform.position);
+
     }
 }
