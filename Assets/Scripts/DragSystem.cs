@@ -24,6 +24,8 @@ public class DragSystem : MonoBehaviour
     Vector2 localPos; // 변환된 canvas내 좌표
     private RectTransform rectFloating;
 
+    GameObject blocker; // 클릭 이벤트를 차단할 UI 오브젝트
+
 
     private void Start()
     {
@@ -35,7 +37,7 @@ public class DragSystem : MonoBehaviour
         
         // 플로팅 UI 
         canvas2 = GameObject.Find("Canvas2");
-        floatingUI = canvas2.transform.GetChild(0).gameObject;
+        floatingUI = canvas2.transform.GetChild(1).gameObject;
 
         // 캔버스 좌표 
         rt = canvas2.transform as RectTransform;
@@ -43,7 +45,10 @@ public class DragSystem : MonoBehaviour
 
         // EditUIManager 스크립트 
         editUIManager = GameObject.Find("EditUIManager").GetComponent<EditUIManager>();
-        
+
+        // 클릭 이벤트를 차단할 UI 오브젝트
+        blocker = editUIManager.Blocker;
+
     }
 
 
@@ -86,15 +91,31 @@ public class DragSystem : MonoBehaviour
     // 마우스 또는 터치 했을 때 
     void OnMouseDown()
     {
+        // 특정 UI 오브젝트가 활성화되어 있는지 확인
+        if (blocker.activeSelf)
+        {
+            // 마우스 포인터가 UI 요소 위에 있는지 확인
+            if (EventSystem.current.IsPointerOverGameObject())
+            {
+                // 포인터가 UI 요소 위에 있으므로 클릭 이벤트를 차단합니다.
+                return;
+            }
+        }
+
         originTag = gameObject.tag;
         gameObject.tag = "Building";
-        floatingUI.SetActive(true);
+        
+        // 클릭한 오브젝트가 "Building" 태그를 가진 경우만 상호작용
+        if (gameObject.CompareTag("Building"))
+        {
+            floatingUI.SetActive(true);
+            blocker.SetActive(true);
 
-        currentObj = GameObject.FindWithTag("Building");
-        originPosition = currentObj.transform.position;
+            currentObj = GameObject.FindWithTag("Building");
+            originPosition = currentObj.transform.position;
 
-        print("기존 위치 : "+ originPosition);
-
+            print("기존 위치 : " + originPosition);
+        }
     }
 
     // 마우스 드래그 (터치 가능)
@@ -102,17 +123,21 @@ public class DragSystem : MonoBehaviour
     {
         // 구조물이 마우스 따라다니도록
 
-        // 타일맵 기준
-        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, distance));
-        Vector3Int cellPosition = tilemap.WorldToCell(mousePosition);
-        transform.position = tilemap.GetCellCenterWorld(cellPosition);
+        // 현재 오브젝트가 "Building" 태그를 가진 경우만 드래그 가능
+        if (gameObject.CompareTag("Building"))
+        {
+            // 구조물이 마우스 따라다니도록
+            Vector3 mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, distance));
+            Vector3Int cellPosition = tilemap.WorldToCell(mousePosition);
+            transform.position = tilemap.GetCellCenterWorld(cellPosition);
 
-        // 월드 좌표를 스크린 좌표로 변환
-        var screenPos = Camera.main.WorldToScreenPoint(transform.position);
-        
-        // 스크린 좌표를 canvas내에서의 좌표로 변환
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(rt, screenPos, null, out localPos);
-        rectFloating.localPosition = localPos;
+            // 월드 좌표를 스크린 좌표로 변환
+            var screenPos = Camera.main.WorldToScreenPoint(transform.position);
+
+            // 스크린 좌표를 canvas내에서의 좌표로 변환
+            RectTransformUtility.ScreenPointToLocalPointInRectangle(rt, screenPos, null, out localPos);
+            rectFloating.localPosition = localPos;
+        }
 
     }
 

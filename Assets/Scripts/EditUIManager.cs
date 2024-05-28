@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class EditUIManager : MonoBehaviour
 {
@@ -22,6 +23,8 @@ public class EditUIManager : MonoBehaviour
     private Placement placement;
 
     private Dictionary<string, int> tagToIdMap;
+
+    public GameObject Blocker; // 클릭 이벤트를 차단할 UI 오브젝트
 
     private void Start()
     {
@@ -46,12 +49,14 @@ public class EditUIManager : MonoBehaviour
         // 원래 위치로 돌아가기 
 
         FloatingUI.SetActive(false);
+        Blocker.SetActive(false);
         isFloatCancel = true;
     }
 
     public void Floating_Ok() // 완료 클릭
     {
         FloatingUI.SetActive(false);
+        Blocker.SetActive(false);
         isFloatOK = true;
     }
 
