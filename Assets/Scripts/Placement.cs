@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.Tilemaps;
 
 // 건물 배치 및 제거
 public class Placement : MonoBehaviour
 {
     [SerializeField]
-    private GameObject Camera;
+    private GameObject MainCamera;
     private Vector3 ScreenCenter;
 
     [SerializeField]
@@ -32,10 +33,22 @@ public class Placement : MonoBehaviour
     [SerializeField]
     private EditUIManager UiManager;
 
+    public GameObject floatingUI; // 플로팅 UI 
+    private RectTransform rectFloating;  // 플로팅 UI Rect
+    public GameObject blocker; // 클릭 이벤트를 차단할 UI 오브젝트
+
+    public GameObject canvas2;
+    private RectTransform rt;
+
+    Vector2 localPos; // 변환된 canvas내 좌표
+
     public void Start()
     {
         StructureData = new();
-        
+
+        // 캔버스 좌표 
+        rt = canvas2.transform as RectTransform;
+        rectFloating = floatingUI.GetComponent<RectTransform>();
     }
 
     // 버튼 클릭시 중앙에 생성 : ID 받아오기
@@ -50,7 +63,7 @@ public class Placement : MonoBehaviour
         }
 
         // 화면 중앙 좌표 가져오기
-        ScreenCenter = new Vector3(Camera.transform.position.x, Camera.transform.position.y);
+        ScreenCenter = new Vector3(MainCamera.transform.position.x, MainCamera.transform.position.y);
         Debug.Log(ScreenCenter);
 
         // 타일맵 셀 좌표로 가져오기
@@ -85,6 +98,16 @@ public class Placement : MonoBehaviour
         // 편집 UI 내리기 
         UiManager.EditUIDown();
 
+        // floatingUI 활성화 
+        floatingUI.SetActive(true);
+        // blocker.SetActive(true);
+
+        // 월드 좌표를 스크린 좌표로 변환
+        var screenPos = Camera.main.WorldToScreenPoint(ScreenCenter);
+
+        // 스크린 좌표를 canvas내에서의 좌표로 변환
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(rt, screenPos, null, out localPos);
+        rectFloating.localPosition = localPos;
     }
 
 

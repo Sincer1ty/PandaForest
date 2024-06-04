@@ -3562,11 +3562,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a130868a436cbd4c819af67fe4b3df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Camera: {fileID: 1104455329}
+  MainCamera: {fileID: 1104455329}
   grid: {fileID: 1628684437}
   tilemap: {fileID: 626476504}
   database: {fileID: 11400000, guid: ab7e1ea205e72d941a76d01ce1d35c53, type: 2}
   UiManager: {fileID: 1791199272}
+  floatingUI: {fileID: 2121808289}
+  blocker: {fileID: 191165514}
+  canvas2: {fileID: 107875986}
 --- !u!1 &733755311
 GameObject:
   m_ObjectHideFlags: 0
